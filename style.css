@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10;
+}
+img {
+  background-image: url("../images/11.jpg");
+}
