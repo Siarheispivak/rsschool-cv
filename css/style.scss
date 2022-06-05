@@ -8,6 +8,9 @@
     text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 
 a{
@@ -20,7 +23,7 @@ a{
   }
 }
 h2{
-  color: rgb(76, 122, 3);
+  color: rgba(104, 65, 55, 0.925);
 }
 @mixin text-size-weight-position {
     display: flex;
@@ -35,16 +38,25 @@ h2{
 .header{
   position: sticky; /* Липкое позиционирование */
   top: 0; 
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
   height: 60px;
-  align-items: center;
   background-color: rgba(175, 167, 167, 0.692);
-  div{
+  .nav__bar{
     font-weight: bold;
     font-size: 20px;
     color: rgba(104, 65, 55, 0.925);
+    height: inherit;
+    
+    .links{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: inherit;
+      .link__item{
+        a{
+          color: rgba(104, 65, 55, 0.925);
+        }
+      }
+    }
   }
 }
 .main{

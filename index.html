@@ -11,13 +11,17 @@
 
 <body>
   <header class="header">
-    <div class="about__me">About me</div>
-    <div class="education">Education</div>
-    <div class="experience">Experience</div>
-    <div class="code">Code</div>
-    <div class="projects">Projects</div>
-    <div class="contacts">Contacts</div>
-
+    <nav class="nav__bar">
+      <ul class="links">
+        <li class="link__item"><a href="#about__me">About me</a></li>
+        <li class="link__item"><a href="#education">Education</a></li>
+        <li class="link__item"><a href="#expirience">Experience</a></li>
+        <li class="link__item"><a href="#code">Code</a></li>
+        <li class="link__item"><a href="#projects">Projects</a></li>
+        <li class="link__item"><a href="#hobby">Hobby</a></li>
+        <li class="link__item"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="main">
     <section class="section__1">
@@ -59,7 +63,7 @@
             <p>Hard-working</p>
             <p>Quick learner</p>
           </div>
-          <div class="code__examples">
+          <div id="code" class="code__examples">
             <h2>Code</h2>
             <p> <span class="violet">function</span> disemvowel<span class="red">(</span>str<span class="red">)</span>
               <span class="red">{</span><br>
@@ -80,19 +84,19 @@
             <h1>Siarhei Spivak</h1>
             <p>Front-End developer</p>
           </div>
-          <div class="about__me">
+          <div id="about__me" class="about__me">
             <h2>About me</h2>
             <p>I am seeking employment with a company where I can use my ability to communicate with people,
               working
               on
               a different IT projects in team and take advantage of my knowledges and skills.</p>
           </div>
-          <div class="education">
+          <div id="education" class="education">
             <h2>Education</h2>
             <p>Linguistic and Humanities College(4 Years)<a href="https://lgk.mslu.by/"></a>website</p>
             <p>Minsk State Linguistic University(MSLU 4 Years)</p>
           </div>
-          <div class="experience">
+          <div id="expirience" class="experience">
 
             <h2>Work experience</h2>
             <div class="jobs">
@@ -127,7 +131,7 @@
           </div>
 
 
-          <div class="work__examples">
+          <div id="projects" class="work__examples">
             <h2>IT projects</h2>
             <ul class="project__list">
               <li class="projects__item"><a
@@ -147,7 +151,7 @@
               </li>
               <li class="projects__item"><a href="https://siarheispivak.github.io/scc-mem-slider" target="blank"> <img
                     src="./images/projects-images/css-mem-slider.png"></a>
-                <h4 class="project__title">Css-mem-slider</h4>
+                <h4 class="project__title">Css-Mem-Slider</h4>
               </li>
               <li class="projects__item"><a href="https://siarheispivak.github.io/Landing/" target="blank"> <img
                     src="./images/projects-images/landing-page.png"></a>
@@ -155,7 +159,7 @@
               </li>
             </ul>
           </div>
-          <div class="hobby">
+          <div id="hobby" class="hobby">
             <h2>Hobby</h2>
             <div class="music">
 
@@ -167,34 +171,35 @@
   </div>
 
 
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="connections">
       <div class="github"><img src="./images/footer-images/github.png">
-        <p><a href="">My github </a></p>
+        <p><a target="_blank" href="https://github.com/Siarheispivak">My github </a></p>
       </div>
       <div class="linked__in"><img src="./images/footer-images/linkedin.png">
-        <p><a href="">My linkedIn</a> </p>
+        <p><a target="_blank" href="https://www.linkedin.com/in/siarhei-spivak-810b221b1/">My linkedIn</a> </p>
       </div>
       <div class="e-mail"><img src="./images/footer-images/email.png">
-        <p><a href="">My e-mail</a> </p>
+        <p><a href="mailto:siarheispivak@gmail.ru">My e-mail</a> </p>
       </div>
       <div class="discord"><img src="./images/footer-images/discord.png">
-        <p><a href="">My discord</a> </p>
+        <p><a target="_blank" href="https://discord.com/channels/853231667028426753/853231667544195074">My discord</a>
+        </p>
       </div>
       <div class="telephone"><img src="./images/footer-images/telephone.png">
-        <p><a href="">My phone</a> </p>
+        <p><a href="tel:+375295648538">My phone</a> </p>
       </div>
       <div class="viber"><img src="./images/footer-images/viber.png">
-        <p><a href="">My viber</a> </p>
+        <p><a href="viber://chat?number=%2B375295648538">My viber</a> </p>
       </div>
       <div class="wats__app"><img src="./images/footer-images/whatsapp.png">
-        <p><a href="">My watsApp</a> </p>
+        <p><a href="whatsapp://tel:375295648538">My watsApp</a> </p>
       </div>
-      <div class="rs__school"><img src="./images/footer-images/rsschool.png">
-        <p><a href="">rs-school </a></p>
+      <div class="rs__school"><img src="./images/footer-images/rs_school_js.svg">
+        <p><a target="_blank" href="https://rs.school/js/">rs-school </a></p>
       </div>
       <div class="telegram"><img src="./images/footer-images/telegram.png">
-        <p><a href="">My telegram</a> </p>
+        <p><a href="https://telegram.me/SiarheiSpivak">My telegram</a> </p>
       </div>
 
     </div>

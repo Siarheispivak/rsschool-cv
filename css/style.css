@@ -11,6 +11,10 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: #5df77e;
 }
@@ -23,7 +27,7 @@ a:hover {
 }
 
 h2 {
-  color: #4c7a03;
+  color: rgba(104, 65, 55, 0.925);
 }
 
 .header {
@@ -31,22 +35,30 @@ h2 {
   position: sticky;
   /* Липкое позиционирование */
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   height: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: rgba(175, 167, 167, 0.692);
 }
 
-.header div {
+.header .nav__bar {
   font-weight: bold;
   font-size: 20px;
+  color: rgba(104, 65, 55, 0.925);
+  height: inherit;
+}
+
+.header .nav__bar .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.header .nav__bar .links .link__item a {
   color: rgba(104, 65, 55, 0.925);
 }
 
