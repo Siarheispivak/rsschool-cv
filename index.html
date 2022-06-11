@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Resume</title>
+  <link rel="stylesheet" href="../../assets/fonts/stylesheet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -30,7 +31,7 @@
           <img src="./images/cv-image.jpg" alt="avatar-image">
           <div class="contacts">
             <h2>Contacts</h2>
-            <ul>
+            <ul class="info__links">
               <li>
                 <p>E-Mail: <a href="mailto:Siarheispivak@gmail.com">Siarheispivak@gmail.com</a>
                 </p>
@@ -54,7 +55,7 @@
           </div>
           <div class="skills">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skill__item">
               <li>HTML5</li>
               <li>CSS/SCSS</li>
               <li>VS Code</li>
@@ -68,7 +69,7 @@
           </div>
           <div class="strengths">
             <h2>Key strengths</h2>
-            <ul>
+            <ul class="strengths__item">
               <li>Punctual</li>
               <li>Multitasking</li>
               <li>Initiative</li>
@@ -87,7 +88,7 @@
               <span class="red">}</span>
             </code></p>
           </div>
-          <div class="connections">
+          <div id="contacts" class="connections">
             <div class="github"><img src="./images/footer-images/github.png" alt="github-image">
               <p><a target="_blank" href="https://github.com/Siarheispivak">My github </a></p>
             </div>
@@ -130,20 +131,22 @@
             <p>Front-End developer</p>
           </div>
           <div id="about__me" class="about__me">
-            <h2>About me</h2>
+            <h2 class="about__me-info">About me</h2>
             <p>I am seeking employment with a company where I can use my ability to communicate with people,
               working
               on
-              a different IT projects in team and take advantage of my knowledges and skills.</p>
+              a different IT projects in team and take advantage of my knowledges and skills.I am currently studying at
+              <a href="#footer"> <span class="blue">RS-school</span>.</a>
+            </p>
           </div>
           <div id="education" class="education">
-            <h2>Education</h2>
+            <h2 class="education-info">Education</h2>
             <ul class="institutions">
               <li>
-                <p>Linguistic and Humanities College(4 Years)<a href="https://lgk.mslu.by/"></a>website</p>
+                <p>Linguistic and Humanities College<a target="_blank" href="https://lgk.mslu.by/"> (Website)</a></p>
               </li>
               <li>
-                <p>Minsk State Linguistic University(MSLU 4 Years)</p>
+                <p>Minsk State Linguistic University <a target="_blank" href="https://www.mslu.by/">( Website)</a></p>
               </li>
             </ul>
 
@@ -157,7 +160,7 @@
                 <p>01.02.2018/Minsk /Belarus</p>
                 <div class="description">
                   <p><span>Company:</span> “Belavia” - Belarusian Airlines</p>
-                  <p><span>Role:</span> Cabin Attendant</p>
+                  <p><span>Role:</span> Cabin Crew</p>
                 </div>
               </div>
 
@@ -184,7 +187,7 @@
 
 
           <div id="projects" class="work__examples">
-            <h2>IT projects</h2>
+            <h2 class="it__projects">IT projects</h2>
             <ul class="project__list">
               <li class="projects__item"><a
                   href="https://rolling-scopes-school.github.io/siarheispivak-JSFE2022Q1/shelter/pages/main/index.html"
@@ -212,38 +215,50 @@
             </ul>
           </div>
           <div id="hobby" class="hobby">
-            <h2>Hobby</h2>
+            <h2 class="hobby-info">Hobby</h2>
             <div class="sport">
               <h4>Favourite sports games:</h4>
-              <ul class="ul">
-                <li>Basketball <img src="./images/hobby-images/Basketball.svg" alt="basketball"></li>
-                <li>Volleyball <img src="./images/hobby-images/images.png" alt="volleyball"></li>
-                <li>Football <img src="./images/hobby-images/football.png" alt="football"></li>
+              <ul class="janres">
+
+                <li class="janres__item"> Foot ball <img src="./images/hobby-images/football.svg" alt="football"></li>
+                <li class="janres__item">Basketball <img src="./images/hobby-images/Basketball.svg" alt="basketball">
+                </li>
+                <li class="janres__item"> Volleyball <img src="./images/hobby-images/volleyball.svg.png"
+                    alt="volleyball"></li>
+
               </ul>
             </div>
             <div class="music">
               <h4>Favourite musical genres:</h4>
-              <ol class="ul">
-                <li>Metalcore <img src="./images/hobby-images/beartooth.jpg" alt="beartooth"></li>
-                <li>Punk-rock <img src="./images/hobby-images/offspring.png" alt="offspring"></li>
-                <li>Pop-punk <img src="./images/hobby-images/machingunkelly.png" alt="MGK"></li>
-                <li>Post-hardcore <img src="./images/hobby-images/dshmc.jpg" alt="DSHMC"></li>
-              </ol>
+              <ul class="janres">
+                <li class="janres__item">Metalcore <a target="_blank"
+                    href="https://genius.com/Beartooth-in-between-lyrics"><img src="./images/hobby-images/beartooth.jpg"
+                      alt="beartooth"></a> </li>
+                <li class="janres__item">Punk-rock <a target="_blank"
+                    href="https://genius.com/The-offspring-self-esteem-lyrics"><img
+                      src="./images/hobby-images/offspring.png" alt="offspring"></a> </li>
+                <li class="janres__item">Pop-punk <a target="_blank"
+                    href="https://genius.com/Machine-gun-kelly-drunk-face-lyrics"><img
+                      src="./images/hobby-images/machinegunkelly.jpeg" alt="MGK"></a> </li>
+                <li class="janres__item">Post - <br>hardcore <a target="_blank"
+                    href="https://genius.com/Dead-silence-hides-my-cries-time-is-not-endless-lyrics"><img
+                      src="./images/hobby-images/dshmc.jpg" alt="DSHMC"> </a> </li>
+              </ul>
             </div>
             <div class="my__project">
-              <h2>My band!</h2>
-              <div class="agimw">
+              <h2 class="more">My band</h2>
+              <div id="agimw" class="agimw">
                 <p class="agimw">As God Is My Witness</p>
                 <img src="./images/hobby-images/wide-agimw.png" alt="AGIMW">
                 <ul class="band__links">
-                  <li><a target="_blank" href="https://www.youtube.com/c/agimwofficial"><img
+                  <li class="band-link"><a target="_blank" href="https://www.youtube.com/c/agimwofficial"><img
                         src="./images/hobby-images/youtubesvg.svg.png" alt="youtube"></a></li>
-                  <li><a target="_blank" href="https://agimw.bandcamp.com/album/the-renascence"><img
+                  <li class="band-link"><a target="_blank" href="https://agimw.bandcamp.com/album/the-renascence"><img
                         src="./images/hobby-images/Bandcamp.svg" alt="bandcamp"></a></li>
-                  <li><a target="_blank" href="https://www.youtube.com/watch?v=DL7fOS8m_vo"><img
+                  <li class="band-link"><a target="_blank" href="https://www.youtube.com/watch?v=DL7fOS8m_vo"><img
                         src="./images/hobby-images/youtube.png" alt="youtube"></a></li>
-                  <li><a target="_blank" href="https://vk.com/agimwband"><img src="./images/hobby-images/vk.svg"
-                        alt="vkontakte"></a>
+                  <li class="band-link"><a target="_blank" href="https://vk.com/agimwband"><img
+                        src="./images/hobby-images/vk.svg" alt="vkontakte"></a>
                   </li>
                 </ul>
               </div>
@@ -255,7 +270,7 @@
   </div>
 
 
-  <footer id="contacts" class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__container">
       <div class="rs__school">
         <p><a target="_blank" href="https://rs.school/js/"><img src="./images/footer-images/rs_school_js.svg"

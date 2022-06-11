@@ -6,14 +6,16 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-body{
-  background-color:#efefef;
+    font-family:'Arial','Georgia';
 }
 html{
   scroll-behavior: smooth;
 }
+body{
+  background-color:#efefef;
+ 
+}
+
 a{
   color: #010202;
   &:hover{
@@ -82,7 +84,7 @@ a{
   .contacts{
     @include text-size-weight-position;
     color: #5c4646;
-    ul{
+    .info__links{
       @include text-size-weight-position;
     }
     
@@ -90,7 +92,7 @@ a{
   .skills{
     @include text-size-weight-position;
     color: #5c4646;
-    ul{
+    .skill__item{
       @include text-size-weight-position;
     }
     
@@ -98,7 +100,7 @@ a{
   .strengths{
     @include text-size-weight-position;
     color: #5c4646;
-    ul{
+    .strengths__item{
       @include text-size-weight-position;
      
     }
@@ -140,6 +142,7 @@ a{
    }
  
 }
+
 .section__about{
   width: 100%;
   background-color:#efefef;
@@ -156,16 +159,20 @@ a{
   }
   .about__me{
     @include text-size-weight-position;
-    h2{
+    .about__me-info{
       background-color: rgba(87, 151, 95, 0.774);
       min-width: 820px;
       text-align: center;
       border-radius: 20px;
     }
+    .blue{
+      color: rgb(123, 81, 240);
+    }
   }
+  
   .education{
     @include text-size-weight-position;
-    h2{
+    .education-info{
       background-color: rgba(87, 151, 95, 0.774);
       min-width: 820px;
       text-align: center;
@@ -210,7 +217,7 @@ a{
 
 .work__examples{
   @include text-size-weight-position;
-  h2{
+  .it__projects{
     background-color: rgba(87, 151, 95, 0.774);
     min-width: 820px;
     text-align: center;
@@ -249,8 +256,7 @@ a{
 }
 
 .hobby{
-
-  h2{
+  .hobby-info{
     background-color: rgba(87, 151, 95, 0.774);
     color: #5c4646;
     min-width: 820px;
@@ -273,10 +279,11 @@ a{
     align-self: flex-end;
   }
   .my__project{
-    
+    margin-bottom: 20px;
     .agimw{
+      color: #000000;
       font-size: 35px;
-      @include text-color-gradient;
+      transition: all 0.2s linear 0s;
       background-color:#efefef;
       display: flex;
       flex-direction: column;
@@ -284,24 +291,42 @@ a{
       img{
         border-radius: 10px;
       }
+      &:hover{
+        @include text-color-gradient;
+        background-color:#efefef;
+        transition: all 0.2s linear;
+      }
     }
     .band__links{
       display: flex;
       justify-content: space-around;
       align-items: center;
+      .band-link{
+        &:hover{
+          transform: scale(1.5);
+          transition: all 0.5s;
+        }
+      }
       img{
         max-width: 50px;
       }
     }
   }
-  .ul{
+  .janres{
     @include text-size-weight-position;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     img{
-      width: 60px;
+      width: 70px;
+      border-radius: 10px;
+    }
+    .janres__item{
+      display: flex;
+      align-items: center;
+      gap: 90px;
+
     }
   }
 }
@@ -324,7 +349,7 @@ a{
      margin-top: 40px;
      font-weight: bold;
      font-size: 20px;
-     color: #efefef;
+     color: #000000;
    }
  
 }
