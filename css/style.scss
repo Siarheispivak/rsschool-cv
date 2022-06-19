@@ -63,9 +63,10 @@ a{
   }
 }
 .main{
+  display: flex;
   max-width: 1280px;
   margin: 0 auto;
-  display: flex;
+ 
   .container{
     display: flex;
   }

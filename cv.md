@@ -33,7 +33,7 @@ discord:                            || Siarhei#8341
 
 *CSS                    [Landing page](https://siarheispivak.github.io/Landing/ "Mercedes")
 
-*English   
+*English                (Upper intermediate) 
 
 *JS basics
 
