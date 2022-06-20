@@ -102,6 +102,9 @@ a{
   .english{
     @include text-size-weight-position;
     color: #5c4646;
+    .lang__items{
+      @include text-size-weight-position;
+    }
   }
   .strengths{
     @include text-size-weight-position;
@@ -340,12 +343,12 @@ a{
 
 
 .footer{
- 
+  
   padding: 30px;
   background-color: rgba(87, 151, 95, 0.774);
    .footer__container{
      display: flex;
-    //  justify-content: space-around;
+     justify-content: space-around;
      div{
        width: 250px;
      }
